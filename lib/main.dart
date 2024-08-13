@@ -12,6 +12,6 @@ void main() {
 class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Text('Welcome to GetX!');
+    return Text('Welcome to fucking GetX!');
   }
 }
