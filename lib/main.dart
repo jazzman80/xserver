@@ -3,6 +3,7 @@ import 'package:get_server/get_server.dart';
 void main() {
   runApp(
     GetServerApp(
+      port: 443,
       home: Home(),
     ),
   );
