@@ -3,7 +3,7 @@ FROM ubuntu:24.04
 
 RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y curl git unzip xz-utils zip libglu1-mesa
-RUN apt-get install snapd -y
+RUN apt install snapd -y
 #RUN apt-get clean
 RUN snap install -y flutter --classic
 
