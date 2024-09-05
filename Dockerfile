@@ -1,10 +1,10 @@
 # Install Operating system and dependencies
 FROM ubuntu:24.04
 
-RUN sudo apt-get update -y && sudo apt-get upgrade -y;
-RUN sudo apt-get install -y curl git unzip xz-utils zip libglu1-mesa
+RUN apt-get update -y && sudo apt-get upgrade -y
+RUN apt-get install -y curl git unzip xz-utils zip libglu1-mesa
 #RUN apt-get clean
-RUN sudo snap install flutter --classic
+RUN snap install flutter --classic
 
 # download Flutter SDK from Flutter Github repo
 RUN #git clone https://github.com/flutter/flutter.git /usr/local/flutter
