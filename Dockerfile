@@ -5,7 +5,7 @@ RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y curl git unzip xz-utils zip libglu1-mesa
 RUN apt install snapd -y
 #RUN apt-get clean
-RUN snap install -y flutter --classic
+RUN snap install flutter --classic
 
 # download Flutter SDK from Flutter Github repo
 RUN #git clone https://github.com/flutter/flutter.git /usr/local/flutter
