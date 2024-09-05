@@ -5,10 +5,10 @@ RUN apt-get update -y && apt-get upgrade -y
 RUN apt-get install -y curl git unzip xz-utils zip libglu1-mesa
 RUN apt-get install snapd -y
 #RUN apt-get clean
-RUN #snap install -y flutter --classic
+RUN snap install -y flutter --classic
 
 # download Flutter SDK from Flutter Github repo
-RUN git clone https://github.com/flutter/flutter.git /usr/local/flutter
+RUN #git clone https://github.com/flutter/flutter.git /usr/local/flutter
 
 # Set flutter environment path
 ENV PATH="/usr/local/flutter/bin:/usr/local/flutter/bin/cache/dart-sdk/bin:${PATH}"
